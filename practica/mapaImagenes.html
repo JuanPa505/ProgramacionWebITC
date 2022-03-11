@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+  <title>Mapa de imagenes</title>
+</head>
+<body>
+  <h1>Mapa de imagenes</h1>
+    <p>Los mapas de imágenes es un nuevo planteamiento de navegación que incorpora una serie de enlaces dentro de una misma imagen. Estos enlaces son definidos por figuras geométricas y funcionan exactamente del mismo modo que los otros enlaces. Podéis ver el funcionamiento de uno en este enlace.</p>
+  <table border=0 width=450><tr><td align="center"> 
+<map name="mapa1"> 
+<area alt="Pulsa para volver al menu principal" shape="CIRCLE" coords="44,36,29" href="index.html"> 
+<area alt="Pulsa para ir a Imagenes" shape="CIRCLE" coords="140,35,31" href="imagenes.html"> 
+<area alt="Pulsa para ir a iFrames" shape="circle" coords="239,37,30" href="iframes.html"> 
+<area alt="Pulsa para ir a Videos" shape="CIRCLE" coords="336,36,31" href="video.html"> 
+</map> 
+<img src="recursos/icon.png" width="380" height="72" alt="Mapa de imágenes. Pulsa en cada una de los círculos." border="0" usemap="#mapa1"> 
+<br> 
+Pulsa en los círculos para acceder a las paginas correspondientes.
+</td>
+</tr>
+</table>
+  <a href="index.html">
+    <button class="btn btn-success">Regresar</button>
+  </a>
+</body>
+</html>
