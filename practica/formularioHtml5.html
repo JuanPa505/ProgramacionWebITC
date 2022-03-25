@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+  <title>Formulario HTML%</title>
+</head>
+<body>
+      <h1 style="padding-top: 10px; padding-left: 20px;">Formulario HTML5</h1>
+      <label for="">Autofocus:</label><br>
+      <input type="number" name="nombre" autofocus="autofocus"><br>
+      <label for="">Autocomplete:</label><br>
+      <form action="#" autocomplete="on"> ​
+          Nombre: <input type="text" name="nombre" autocomplete="on"/> ​
+          Apellidos: <input type="text" name="apellidos" autocomplete="off" /> ​
+      </form>​<br>
+      <label for="">Form:</label><br>
+      <form action="form-html5.php" id="formulario" method="POST"> ​
+          Nombre: <input type="text" name="nombre"><br> ​
+            <input type="submit" value="Enviar">​
+      </form> ​<br>
+      <label for="">Formaction:</label><br>
+      <form action="ejemplo-action1.php"> ​
+          Nombre: <input type="text" name="nombre"><br> ​
+          Apellidos: <input type="text" name="apellidos"><br> ​
+      <input type="submit" value="Por defecto"><br>​
+          <input type="submit" formaction="ejemplo-action2.php" value="Nuevo action"> </form><br>
+        <label for="">Formenctype:</label><br>
+        <form enctype="multipart/form-data"> ​
+              <input type="submit" value="Enviar" formenctype="application/x-www-form-urlencoded">​
+        </form><br>
+        <label for="">FormMethod:</label>  <br>
+        <form action="ejemplo-formmethod-html5.php" method="post"> ​
+            Introducir nombre: <input type="text" name="nombre"/> ​
+            Introducir edad: <input type="number" name="edad"/> ​
+            <input type="submit" formmethod="get" value="Enviar con GET"> ​
+            <input type="submit" value="Enviar con POST"> ​
+          </form><br>
+        <label for="">FormNoValidate:</label><br>
+        <form action="ejemplo-formnovalidate-html5.php" method="POST"> ​
+            Nombre: <input type="text" name="nombre"> ​
+            Edad: <input type="number" name="edad"> ​
+            Fecha nacimiento: <input type="date" name="nacimiento"> ​
+            <input type="submit" value="Enviar"> ​
+            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validación">​
+          </form><br>
+          <label for="">FormTarget:</label><br>
+          <form action="ejemplo-formtarget-html5.php" method="POST">​
+            Nombre: <input type="text" name="nombre"> ​
+            <input type="submit" formtarget="_blank" value="Enviar con target blank"> <input type="submit" value="Enviar"> ​
+          </form>​<br>          
+          <label for="">List:</label><br>
+          <form name="formulario" id="formulario" action="list-html5.php" method="POST"> ​
+             Escribe un color (Azul, rojo, amarillo, negro, verde): <datalist id="listas"> ​
+              <option value="azul"> <option value="rojo"> ​
+              <option value="amarillo"> <option value="negro"> ​
+              <option value="verde"> ​
+              </datalist> ​
+              <input name="color" list="listas"> <input type="submit" value="Enviar"> ​
+            </form>​<br>
+          <label for="">Multiple:</label><br>
+          <input type="file" name="archivos" multiple="multiple" /> ​
+          <input type="email" name="emails" multiple="multiple" /><br>
+          <label for="">Pattern</label><br>
+          <input type="text" name="pueblo" pattern="[A-Za-z]{4-16}">​<br>
+          <label for="">PlaceHolder:</label><br>
+          <input type="text" name="nombre" placeholder="inserta tu nombre">​<br>
+          <label for="">Output:</label><br>
+          <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0​
+            <input type="range" id="a" value="50">100   +<input type="number" id="b" value="50">​
+              =<output name="x" for="a b"></output>​
+          </form>​<br>
+          ​<label for="">Nuevos tipos de Input:</label><br>
+          <input type="email" /> ​<br>
+          <input type="url" /> ​<br>
+          <input type="date" />​<br>
+          <input type="time" /> ​<br>
+          <input type="datetime" />​<br>
+          <input type="month" />​<br>
+          <input type="week" /> ​<br>
+          <input type="number" />​<br>
+          <input type="range" /> ​<br>
+          <input type="tel" /> ​<br>
+          <input type="search" /> ​<br>
+          <input type="color" /><br>
+       <a href="index.html">
+          <button type="button" class="btn btn-danger">Regresar</button>
+      </a>
+</body>
+</html>
